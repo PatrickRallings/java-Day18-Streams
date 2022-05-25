@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 public class Divisible {
 
     public void main(ArrayList<Integer> nums){
-        System.out.println(divisibleNumbers(nums));
+        divisibleNumbers(nums).forEach(System.out::println);
     }
 
     private List<Integer> divisibleNumbers(ArrayList<Integer> nums){
