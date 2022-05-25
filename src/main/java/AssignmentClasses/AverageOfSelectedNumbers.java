@@ -1,8 +1,10 @@
+package AssignmentClasses;
+
 import java.util.ArrayList;
 import java.util.OptionalDouble;
 import java.util.Scanner;
 
-public class AverageOfSelectedNumbers implements Average{
+public class AverageOfSelectedNumbers implements Average {
 
     ArrayList<String> numbers;
 

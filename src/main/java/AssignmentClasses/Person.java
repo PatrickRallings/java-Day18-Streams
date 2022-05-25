@@ -1,3 +1,5 @@
+package AssignmentClasses;
+
 import java.util.Scanner;
 
 public class Person {

@@ -1,3 +1,5 @@
+package AssignmentClasses;
+
 import java.util.ArrayList;
 import java.util.OptionalDouble;
 import java.util.Scanner;

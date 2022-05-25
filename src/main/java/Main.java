@@ -1,12 +1,14 @@
+import AssignmentClasses.*;
+
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
-        //Average of Numbers Assignment
+        //AssignmentClasses.Average of Numbers Assignment
         AverageOfNumbers avg = new AverageOfNumbers();
         avg.main();
 
-        //Average of Selected Numbers Assignment
+        //AssignmentClasses.Average of Selected Numbers Assignment
         AverageOfSelectedNumbers avgS = new AverageOfSelectedNumbers();
         avgS.main();
 
@@ -20,7 +22,7 @@ public class Main {
         PositiveNumbers pos = new PositiveNumbers();
         pos.main(nums);
 
-        //Divisible Assignment
+        //AssignmentClasses.Divisible Assignment
         ArrayList<Integer> numList = new ArrayList();
         numList.add(3);
         numList.add(-15);
@@ -34,7 +36,7 @@ public class Main {
         PrintingUserInput print = new PrintingUserInput();
         print.main();
 
-        //LimitedNumbers
+        //AssignmentClasses.LimitedNumbers
         LimitedNumbers limitedNumbers = new LimitedNumbers();
         limitedNumbers.main();
 
@@ -47,10 +49,10 @@ public class Main {
 
         //Reading Files Per Line Assignment
         ReadingFilesPerLine readFile = new ReadingFilesPerLine();
-        readFile.main("src/main/java/fileName.txt");
+        readFile.main("src/main/java/AssignmentTxtFiles/fileName.txt");
 
         //Books From File Assignment
         BooksFromFile books = new BooksFromFile();
-        books.main("src/main/java/bookFile.txt");
+        books.main("src/main/java/AssignmentTxtFiles/bookFile.txt");
     }
 }
