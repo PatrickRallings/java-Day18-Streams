@@ -2,17 +2,13 @@ import java.util.ArrayList;
 import java.util.OptionalDouble;
 import java.util.Scanner;
 
-public abstract class Average {
+public interface Average {
 
-    ArrayList<String> numbers;
+    ArrayList<String> numbers = new ArrayList<>();
 
-    public Average(){
-        this.numbers = new ArrayList<>();
-    }
+    public void main();
 
-    public abstract void main();
-
-    public void loop(){
+    private void loop(){
         while(true){
             String temp = scanner();
             if (!checkEnd(temp)) {
@@ -25,7 +21,7 @@ public abstract class Average {
         }
     }
 
-    public String scanner(){
+    private String scanner(){
         Scanner scan = new Scanner(System.in);
         return scan.nextLine();
     }
