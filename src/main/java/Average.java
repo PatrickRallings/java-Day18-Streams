@@ -21,26 +21,9 @@ public interface Average {
         }
     }
 
-    private String scanner(){
-        Scanner scan = new Scanner(System.in);
-        return scan.nextLine();
-    }
+    public String scanner();
 
-    private boolean checkEnd(String input){
-        return input.equalsIgnoreCase("end");
-    }
+    boolean checkEnd(String input);
 
-    private boolean checkNumber(String num) {
-        try {
-            Integer.parseInt(num);
-            return true;
-        } catch(NumberFormatException n) {
-            return false;
-        }
-    }
-
-    private double averageStream(){
-        OptionalDouble avg = numbers.stream().mapToDouble(Double::parseDouble).average();
-        return avg.isPresent() ? avg.getAsDouble() : 0;
-    }
+    public boolean checkNumber(String num);
 }

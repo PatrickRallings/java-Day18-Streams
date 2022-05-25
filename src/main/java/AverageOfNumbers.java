@@ -29,16 +29,16 @@ public class AverageOfNumbers implements Average {
         }
     }
 
-    private String scanner(){
+    public String scanner(){
         Scanner scan = new Scanner(System.in);
         return scan.nextLine();
     }
 
-    private boolean checkEnd(String input){
+    public boolean checkEnd(String input){
         return input.equalsIgnoreCase("end");
     }
 
-    private boolean checkNumber(String num) {
+    public boolean checkNumber(String num) {
         try {
             Integer.parseInt(num);
             return true;
