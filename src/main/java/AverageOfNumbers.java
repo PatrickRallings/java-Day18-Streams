@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.OptionalDouble;
 import java.util.Scanner;
 
-public class AverageOfNumbers {
+public class AverageOfNumbers extends Average {
 
     ArrayList<String> numbers;
 
@@ -19,8 +19,10 @@ public class AverageOfNumbers {
     public void loop(){
         while(true){
             String temp = scanner();
-            if (!checkEnd(temp))
-            numbers.add(temp);
+            if (!checkEnd(temp)) {
+                if(checkNumber(temp))
+                    numbers.add(temp);
+            }
             else {
                 break;
             }
@@ -34,6 +36,15 @@ public class AverageOfNumbers {
 
     private boolean checkEnd(String input){
         return input.equalsIgnoreCase("end");
+    }
+
+    private boolean checkNumber(String num) {
+        try {
+            Integer.parseInt(num);
+            return true;
+        } catch(NumberFormatException n) {
+            return false;
+        }
     }
 
     private double averageStream(){
