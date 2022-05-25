@@ -65,7 +65,7 @@ public class AverageOfSelectedNumbers implements Average{
     }
 
     private double averageNegativeStream(){
-        OptionalDouble avg = numbers.stream().mapToDouble(Double::parseDouble).filter(n -> n > 0).average();
+        OptionalDouble avg = numbers.stream().mapToDouble(Double::parseDouble).filter(n -> n < 0).average();
         return avg.isPresent() ? avg.getAsDouble() : 0;
     }
 }
