@@ -29,5 +29,9 @@ public class Main {
 //        numList.add(-18);
 //        Divisible div = new Divisible();
 //        div.main(numList);
+
+        //Printing User Input Assignment
+        PrintingUserInput print = new PrintingUserInput();
+        print.main();
     }
 }
